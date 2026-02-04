@@ -29,7 +29,7 @@ public class HideTab {
     @SubscribeEvent
     public void onKeyPressed(ScreenEvent.KeyPressed.Pre event) {
         if (event.getScreen() instanceof ChatScreen chat) {
-            if (event.getKeyCode() == 258) { // 258 это TAB
+            if (event.getKeyCode() == 258) {
                 try {
                     String currentText = "";
                     for (Object child : chat.children()) {
